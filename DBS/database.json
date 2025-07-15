@@ -1,0 +1,671 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "fullName": "Nguyễn Văn An",
+      "email": "nguyenvanan@example.com",
+      "password": "123",
+      "token": ""
+    },
+    {
+      "id": "2",
+      "fullName": "Nguyễn Trung Nguyên",
+      "email": "haitsfq@gmail.com",
+      "password": "123",
+      "token": ""
+    },
+    {
+      "id": "1750686622926",
+      "fullName": "Nguyễn Trung Nguyên",
+      "email": "haitsfq@gmail.coma",
+      "password": "123",
+      "token": "w8kjcheiq5mb7rhx3kok"
+    }
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "name": "HTML"
+    },
+    {
+      "id": 2,
+      "name": "CSS"
+    },
+    {
+      "id": 3,
+      "name": "JS"
+    },
+    {
+      "id": 4,
+      "name": "React"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "topicId": 1,
+      "question": "Thẻ <section> và <article> khác nhau cơ bản ở điểm nào?",
+      "answers": [
+        "Không có sự khác biệt, có thể dùng thay thế cho nhau.",
+        "<article> dùng cho nội dung độc lập, có thể phân phối riêng, còn <section> dùng để nhóm các nội dung liên quan.",
+        "<section> luôn phải nằm trong <article>.",
+        "<article> dùng cho văn bản, <section> dùng cho hình ảnh."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 2,
+      "topicId": 1,
+      "question": "Mục đích chính của việc sử dụng thuộc tính `data-*` trong HTML5 là gì?",
+      "answers": [
+        "Để style CSS cho element một cách đặc biệt.",
+        "Để lưu trữ dữ liệu tùy chỉnh riêng tư cho trang hoặc ứng dụng mà không ảnh hưởng đến markup.",
+        "Để tăng tốc độ tải trang.",
+        "Để thay thế cho thuộc tính `id` và `class`."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 3,
+      "topicId": 1,
+      "question": "Sự khác biệt giữa `localStorage` và `sessionStorage` là gì?",
+      "answers": [
+        "localStorage lưu trữ được nhiều dữ liệu hơn.",
+        "localStorage tồn tại vĩnh viễn cho đến khi bị xóa thủ công, còn sessionStorage sẽ bị xóa khi tab/trình duyệt đóng lại.",
+        "sessionStorage nhanh hơn localStorage.",
+        "Chỉ có localStorage mới có thể truy cập được bằng JavaScript."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 4,
+      "topicId": 1,
+      "question": "Khi nào nên sử dụng `defer` và khi nào nên sử dụng `async` cho thẻ `<script>`?",
+      "answers": [
+        "`async` tải và thực thi ngay lập tức, `defer` tải nhưng đợi HTML parse xong mới thực thi.",
+        "`defer` đảm bảo thứ tự thực thi của các script, `async` thì không.",
+        "Cả A và B đều đúng.",
+        "Chúng hoàn toàn giống nhau."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 5,
+      "topicId": 1,
+      "question": "Thẻ `<canvas>` và `<svg>` khác nhau như thế nào?",
+      "answers": [
+        "`<canvas>` là đồ họa raster (bitmap), `<svg>` là đồ họa vector.",
+        "`<svg>` có hiệu năng tốt hơn cho các game phức tạp.",
+        "`<canvas>` có thể được style trực tiếp bằng CSS.",
+        "`<svg>` không thể tương tác được với JavaScript."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 6,
+      "topicId": 1,
+      "question": "Mô hình 'Critical Rendering Path' mô tả điều gì?",
+      "answers": [
+        "Quá trình JavaScript tối ưu hóa mã.",
+        "Các bước trình duyệt thực hiện để chuyển đổi HTML, CSS, và JavaScript thành các pixel trên màn hình.",
+        "Cách server gửi file HTML về cho client.",
+        "Một kỹ thuật để debug lỗi trong HTML."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 7,
+      "topicId": 1,
+      "question": "Lợi ích của việc sử dụng HTML ngữ nghĩa (Semantic HTML) là gì?",
+      "answers": [
+        "Chỉ để cho code trông đẹp hơn.",
+        "Cải thiện SEO, tăng khả năng tiếp cận (accessibility) và giúp code dễ đọc hơn.",
+        "Làm cho trang web chạy nhanh hơn một cách đáng kể.",
+        "Là yêu cầu bắt buộc của chuẩn HTML5."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 8,
+      "topicId": 1,
+      "question": "Thuộc tính `rel=\"noopener\"` trong thẻ `<a>` có tác dụng gì?",
+      "answers": [
+        "Ngăn trang mới mở có quyền truy cập vào đối tượng `window` của trang gốc, tăng cường bảo mật.",
+        "Mở liên kết trong một tab mới.",
+        "Báo cho trình duyệt không gửi thông tin referer đến trang đích.",
+        "Tạo một kết nối trước tới trang đích để tăng tốc."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 9,
+      "topicId": 1,
+      "question": "Shadow DOM là gì?",
+      "answers": [
+        "Một cách để làm tối giao diện website.",
+        "Một DOM thứ hai được tải song song với DOM chính.",
+        "Một kỹ thuật để đóng gói cấu trúc DOM và CSS, ngăn chúng ảnh hưởng ra bên ngoài (thường dùng trong Web Components).",
+        "Một phiên bản cũ hơn của DOM."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 10,
+      "topicId": 1,
+      "question": "Thẻ `<iframe>` có những nhược điểm gì về bảo mật và hiệu năng?",
+      "answers": [
+        "Nó không có nhược điểm nào.",
+        "Có thể gây ra lỗ hổng clickjacking và làm chậm quá trình tải của trang cha.",
+        "Nó chỉ có thể hiển thị nội dung từ cùng một domain.",
+        "Nó đã lỗi thời và không nên được sử dụng."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 11,
+      "topicId": 2,
+      "question": "CSS Box Model bao gồm những thành phần nào theo thứ tự từ trong ra ngoài?",
+      "answers": [
+        "Margin, Border, Padding, Content",
+        "Content, Padding, Border, Margin",
+        "Content, Margin, Border, Padding",
+        "Padding, Content, Border, Margin"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 12,
+      "topicId": 2,
+      "question": "Sự khác biệt giữa `position: absolute`, `relative`, và `fixed` là gì?",
+      "answers": [
+        "`relative` định vị so với vị trí ban đầu của nó, `absolute` so với thẻ cha có `position` khác `static`, `fixed` so với viewport.",
+        "`fixed` và `absolute` hoàn toàn giống nhau.",
+        "`relative` không làm thay đổi vị trí của phần tử.",
+        "`absolute` luôn định vị so với thẻ `<body>`."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 13,
+      "topicId": 2,
+      "question": "Flexbox và Grid, khi nào nên chọn dùng cái nào?",
+      "answers": [
+        "Flexbox dùng cho layout một chiều (hàng hoặc cột), Grid dùng cho layout hai chiều (hàng và cột).",
+        "Grid là phiên bản mới hơn và nên thay thế hoàn toàn Flexbox.",
+        "Flexbox dễ sử dụng hơn cho mọi trường hợp.",
+        "Grid không được hỗ trợ tốt trên các trình duyệt hiện đại."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 14,
+      "topicId": 2,
+      "question": "Độ ưu tiên (specificity) của các selector trong CSS được tính như thế nào?",
+      "answers": [
+        "Selector nào được viết sau sẽ có độ ưu tiên cao hơn.",
+        "Theo thứ tự: Inline styles > IDs > Classes/attributes > Elements.",
+        "Chỉ có `!important` mới quyết định độ ưu tiên.",
+        "Tất cả selector đều có độ ưu tiên như nhau."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 15,
+      "topicId": 2,
+      "question": "Phương pháp BEM (Block, Element, Modifier) trong việc đặt tên class có lợi ích gì?",
+      "answers": [
+        "Làm cho tên class ngắn gọn hơn.",
+        "Tạo ra các CSS component độc lập, dễ tái sử dụng, dễ đọc và tránh xung đột về độ ưu tiên.",
+        "Là một framework CSS giống Bootstrap.",
+        "Bắt buộc phải sử dụng khi làm việc với SASS/SCSS."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 16,
+      "topicId": 2,
+      "question": "Sự khác biệt giữa pseudo-class (`:hover`) và pseudo-element (`::before`) là gì?",
+      "answers": [
+        "Chúng hoàn toàn giống nhau, chỉ khác cách viết.",
+        "Pseudo-class chọn một trạng thái của phần tử, pseudo-element tạo ra một phần tử ảo để style.",
+        "Pseudo-element có độ ưu tiên cao hơn pseudo-class.",
+        "Chỉ có thể có một pseudo-class cho mỗi phần tử."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 17,
+      "topicId": 2,
+      "question": "`box-sizing: border-box;` có tác dụng gì?",
+      "answers": [
+        "Loại bỏ hoàn toàn border của phần tử.",
+        "Làm cho `width` và `height` của phần tử bao gồm cả `padding` và `border`, thay vì chỉ tính `content`.",
+        "Tạo ra một border dạng hộp.",
+        "Chỉ hoạt động với display: flex."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 18,
+      "topicId": 2,
+      "question": "CSS Custom Properties (biến CSS) có ưu điểm gì so với biến trong SASS/SCSS?",
+      "answers": [
+        "Không có ưu điểm gì, chúng hoạt động giống hệt nhau.",
+        "Biến CSS có thể được truy cập và thay đổi bằng JavaScript trong thời gian thực, và tuân theo quy tắc của DOM (cascading).",
+        "Biến SASS được hỗ trợ bởi nhiều trình duyệt cũ hơn.",
+        "Biến CSS có cú pháp phức tạp hơn."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 19,
+      "topicId": 2,
+      "question": "Làm thế nào để căn giữa một `div` theo cả chiều ngang và chiều dọc bên trong một `div` cha?",
+      "answers": [
+        "Chỉ cần dùng `text-align: center` và `vertical-align: middle`.",
+        "Sử dụng `margin: auto;`.",
+        "Sử dụng Flexbox: `display: flex; justify-content: center; align-items: center;`.",
+        "Không thể làm được với CSS thuần."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 20,
+      "topicId": 2,
+      "question": "Stacking Context trong CSS là gì?",
+      "answers": [
+        "Một nhóm các layer được xếp chồng lên nhau theo trục Z.",
+        "Một lỗi xảy ra khi có quá nhiều phần tử lồng nhau.",
+        "Một cách để tối ưu hóa hiệu năng CSS.",
+        "Tên gọi khác của thuộc tính `z-index`."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 21,
+      "topicId": 3,
+      "question": "Sự khác biệt chính giữa `var`, `let`, và `const` là gì?",
+      "answers": [
+        "Không có sự khác biệt, chúng chỉ là các từ khóa khác nhau.",
+        "`var` có function scope và bị hoisting, `let` và `const` có block scope và không bị hoisting theo cách của var.",
+        "`const` có thể được gán lại giá trị, còn `let` thì không.",
+        "`let` và `const` chỉ có thể được sử dụng bên trong các hàm."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 22,
+      "topicId": 3,
+      "question": "Event Loop trong JavaScript hoạt động như thế nào?",
+      "answers": [
+        "Nó là một vòng lặp vô hạn để kiểm tra lỗi cú pháp.",
+        "Là một cơ chế xử lý bất đồng bộ, liên tục kiểm tra Call Stack, nếu rỗng thì đẩy tác vụ từ Callback Queue vào.",
+        "Nó chỉ chạy một lần khi trang được tải.",
+        "Nó quản lý việc cấp phát bộ nhớ cho các biến."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 23,
+      "topicId": 3,
+      "question": "Closure là gì và một ví dụ thực tế về việc sử dụng nó?",
+      "answers": [
+        "Là một hàm tự đóng lại sau khi thực thi.",
+        "Là khả năng của một hàm con truy cập vào các biến của hàm cha, ngay cả khi hàm cha đã thực thi xong. Ví dụ: tạo biến private.",
+        "Là một lỗi xảy ra khi một hàm không được gọi.",
+        "Là một từ khóa mới trong ES2021."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 24,
+      "topicId": 3,
+      "question": "Sự khác biệt giữa `==` và `===` là gì?",
+      "answers": [
+        "`===` nhanh hơn `==`.",
+        "`==` so sánh giá trị sau khi thực hiện chuyển đổi kiểu (type coercion), `===` so sánh cả giá trị và kiểu dữ liệu (strict equality).",
+        "Chúng hoàn toàn giống nhau.",
+        "`===` chỉ dùng để so sánh object."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 25,
+      "topicId": 3,
+      "question": "`Promise.all` và `Promise.race` khác nhau ở điểm nào?",
+      "answers": [
+        "`Promise.all` trả về khi tất cả các promise thành công, `Promise.race` trả về ngay khi promise đầu tiên hoàn thành (thành công hoặc thất bại).",
+        "`Promise.race` nhanh hơn `Promise.all` trong mọi trường hợp.",
+        "Chúng là hai tên gọi cho cùng một phương thức.",
+        "`Promise.all` chỉ chấp nhận 2 promise, `Promise.race` chấp nhận nhiều hơn."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 26,
+      "topicId": 3,
+      "question": "Từ khóa `this` trong JavaScript đề cập đến cái gì?",
+      "answers": [
+        "Luôn đề cập đến đối tượng `window`.",
+        "Đề cập đến hàm đang được gọi.",
+        "Giá trị của `this` phụ thuộc vào ngữ cảnh nó được gọi (ngữ cảnh thực thi).",
+        "Là một biến toàn cục."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 27,
+      "topicId": 3,
+      "question": "Prototypal Inheritance hoạt động như thế nào trong JavaScript?",
+      "answers": [
+        "JavaScript không hỗ trợ kế thừa.",
+        "Các đối tượng có thể kế thừa thuộc tính và phương thức từ một đối tượng khác thông qua chuỗi prototype (prototype chain).",
+        "Nó hoạt động giống hệt như kế thừa class trong Java hoặc C++.",
+        "Là một thư viện bên ngoài phải cài đặt."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 28,
+      "topicId": 3,
+      "question": "`map`, `filter`, và `reduce` là gì và chúng khác nhau như thế nào?",
+      "answers": [
+        "Tất cả đều là các vòng lặp thay thế cho `for`.",
+        "`map` tạo mảng mới từ kết quả của việc gọi hàm trên mỗi phần tử, `filter` tạo mảng mới với các phần tử thỏa mãn điều kiện, `reduce` tích lũy các phần tử thành một giá trị duy nhất.",
+        "Chúng chỉ hoạt động với mảng số.",
+        "Không có sự khác biệt lớn, có thể dùng thay thế cho nhau."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 29,
+      "topicId": 3,
+      "question": "Sử dụng 'Strict Mode' (`'use strict';`) mang lại lợi ích gì?",
+      "answers": [
+        "Làm cho code chạy chậm hơn.",
+        "Chuyển các 'lỗi thầm lặng' thành các lỗi thực sự, ngăn chặn các hành vi không an toàn và dành chỗ cho các tính năng tương lai.",
+        "Nó chỉ là một comment và không có tác dụng.",
+        "Bắt buộc phải khai báo biến bằng `var`."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 30,
+      "topicId": 3,
+      "question": "Event Delegation là gì?",
+      "answers": [
+        "Một cách để ủy quyền sự kiện cho một thư viện bên ngoài.",
+        "Một kỹ thuật gắn một trình xử lý sự kiện vào một phần tử cha để quản lý các sự kiện cho nhiều phần tử con.",
+        "Việc trì hoãn việc thực thi một sự kiện.",
+        "Một lỗi xảy ra khi một sự kiện được gọi quá nhiều lần."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 31,
+      "topicId": 4,
+      "question": "Virtual DOM trong React hoạt động như thế nào?",
+      "answers": [
+        "Nó là một bản sao trực tiếp của DOM thật, được cập nhật đồng thời.",
+        "Là một biểu diễn của UI trong bộ nhớ. Khi state thay đổi, React tạo một VDOM mới, so sánh (diffing) với VDOM cũ và chỉ cập nhật những phần thay đổi lên DOM thật (reconciliation).",
+        "Virtual DOM là một trình duyệt web ảo được tích hợp trong React.",
+        "Nó chỉ là một khái niệm marketing và không có tác dụng kỹ thuật."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 32,
+      "topicId": 4,
+      "question": "Sự khác biệt cơ bản giữa `props` và `state` là gì?",
+      "answers": [
+        "Chúng hoàn toàn giống nhau.",
+        "`props` được truyền từ component cha xuống và không thể thay đổi bởi component con (immutable), còn `state` được quản lý bên trong component và có thể thay đổi.",
+        "`state` có thể được truyền cho component cha.",
+        "Chỉ có Class Component mới có `props`."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 33,
+      "topicId": 4,
+      "question": "Mục đích của hook `useEffect` là gì?",
+      "answers": [
+        "Để thực hiện các phép tính toán học phức tạp.",
+        "Để thực hiện các side effects trong function components, như fetch dữ liệu, thao tác trực tiếp với DOM, và thiết lập subscription.",
+        "Để quản lý state của component.",
+        "Để tạo các hiệu ứng animation."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 34,
+      "topicId": 4,
+      "question": "Higher-Order Component (HOC) là gì?",
+      "answers": [
+        "Một component có style CSS cao cấp hơn.",
+        "Một component được viết bằng TypeScript.",
+        "Là một hàm nhận vào một component và trả về một component mới, dùng để tái sử dụng logic của component.",
+        "Là tên gọi khác của React component."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 35,
+      "topicId": 4,
+      "question": "Sự khác biệt giữa Controlled và Uncontrolled Components là gì?",
+      "answers": [
+        "Controlled component có state được kiểm soát bởi React, Uncontrolled component có state được quản lý bởi chính DOM (ví dụ dùng `ref`).",
+        "Uncontrolled component không thể có state.",
+        "Tất cả các component trong React đều là controlled.",
+        "Controlled component chạy nhanh hơn."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 36,
+      "topicId": 4,
+      "question": "Mục đích của `React.memo` là gì?",
+      "answers": [
+        "Để ghi nhớ state của component sau khi unmount.",
+        "Là một HOC giúp component chỉ render lại khi props của nó thực sự thay đổi, tương tự PureComponent cho function component.",
+        "Để tạo một ghi chú trong code.",
+        "Để quản lý bộ nhớ của ứng dụng."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 37,
+      "topicId": 4,
+      "question": "Khi nào nên sử dụng `useCallback` và `useMemo`?",
+      "answers": [
+        "Luôn sử dụng chúng cho tất cả các hàm và giá trị để tối ưu hóa.",
+        "`useMemo` để ghi nhớ (memoize) một giá trị tính toán, `useCallback` để ghi nhớ một hàm. Cả hai dùng để tránh việc render không cần thiết ở các component con.",
+        "`useCallback` dùng cho Class component, `useMemo` dùng cho Function component.",
+        "Chúng là các hook đã lỗi thời và được thay thế bởi `useEffect`."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 38,
+      "topicId": 4,
+      "question": "Lifting State Up trong React là gì?",
+      "answers": [
+        "Di chuyển state lên một component cấp cao hơn trên cây DOM.",
+        "Là một mẫu thiết kế để chia sẻ state giữa nhiều component bằng cách di chuyển state đó lên component cha chung gần nhất của chúng.",
+        "Sử dụng một thư viện quản lý state như Redux.",
+        "Một kỹ thuật để làm cho state tải nhanh hơn."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 39,
+      "topicId": 4,
+      "question": "Context API được sử dụng để giải quyết vấn đề gì?",
+      "answers": [
+        "Để thay thế hoàn toàn `props`.",
+        "Để giải quyết vấn đề 'prop drilling', cho phép truyền dữ liệu qua cây component mà không cần phải truyền props thủ công ở mọi cấp.",
+        "Để fetch dữ liệu từ API.",
+        "Để tạo các component dùng chung."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 40,
+      "topicId": 4,
+      "question": "Keys trong React có vai trò gì?",
+      "answers": [
+        "Chỉ là một thuộc tính để trang trí.",
+        "Giúp React xác định các mục nào đã thay đổi, được thêm vào hoặc bị xóa trong một danh sách, từ đó tối ưu hóa việc render lại danh sách.",
+        "Là một định danh duy nhất cho component trên toàn bộ ứng dụng.",
+        "Được sử dụng để truy cập component từ một nơi khác."
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "answers": [
+    {
+      "id": "1",
+      "userId": 1,
+      "topicId": 1,
+      "time": "01:27 03/07/2025",
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": 0
+        },
+        {
+          "questionId": 2,
+          "answer": 0
+        },
+        {
+          "questionId": 3,
+          "answer": 0
+        },
+        {
+          "questionId": 4,
+          "answer": 0
+        },
+        {
+          "questionId": 5,
+          "answer": 0
+        },
+        {
+          "questionId": 6,
+          "answer": 0
+        },
+        {
+          "questionId": 7,
+          "answer": 0
+        },
+        {
+          "questionId": 8,
+          "answer": 0
+        },
+        {
+          "questionId": 9,
+          "answer": 0
+        },
+        {
+          "questionId": 10,
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "b0b0",
+      "userId": 1750686622926,
+      "topicId": 2,
+      "time": "02:32 03/07/2025",
+      "answers": [
+        {
+          "questionId": 11,
+          "answer": 0
+        },
+        {
+          "questionId": 12,
+          "answer": 0
+        },
+        {
+          "questionId": 13,
+          "answer": 0
+        },
+        {
+          "questionId": 14,
+          "answer": 0
+        },
+        {
+          "questionId": 15,
+          "answer": 0
+        },
+        {
+          "questionId": 16,
+          "answer": 0
+        },
+        {
+          "questionId": 17,
+          "answer": 0
+        },
+        {
+          "questionId": 18,
+          "answer": 0
+        },
+        {
+          "questionId": 19,
+          "answer": 0
+        },
+        {
+          "questionId": 20,
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "0001",
+      "userId": 1750686622926,
+      "topicId": 4,
+      "time": "02:34 03/07/2025",
+      "answers": [
+        {
+          "questionId": 31,
+          "answer": 0
+        },
+        {
+          "questionId": 32,
+          "answer": 0
+        },
+        {
+          "questionId": 33,
+          "answer": 0
+        },
+        {
+          "questionId": 34,
+          "answer": 3
+        },
+        {
+          "questionId": 35,
+          "answer": 2
+        },
+        {
+          "questionId": 36,
+          "answer": 0
+        },
+        {
+          "questionId": 37,
+          "answer": 0
+        },
+        {
+          "questionId": 38,
+          "answer": 0
+        },
+        {
+          "questionId": 39,
+          "answer": 0
+        },
+        {
+          "questionId": 40,
+          "answer": 0
+        }
+      ]
+    }
+  ]
+}

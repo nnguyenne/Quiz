@@ -1,0 +1,25 @@
+.question{
+    &__title{
+        text-align: center;
+        background: #ddd;
+        border-radius: 10px;
+    }
+
+    &__question{
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+
+    &__answer{
+        display: inline-block;
+        margin: 15px;
+    }
+
+    &__submit{
+        border: none;
+        padding: 10px 30px;
+        background: rgb(0, 220, 0);
+        cursor: pointer;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,81 @@
+.topic {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__item {
+        background: rgb(112, 112, 151);
+        width: 15%;
+        min-width: 100px;
+        aspect-ratio: 3/1;
+        border-radius: 25px;
+        text-align: center;
+        margin: 10px;
+
+        a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            width: 90%;
+            height: 100%;
+            color: white;
+        }
+
+        &:hover {
+            background-color: rgb(31, 199, 107);
+            transition: all ease-out 0.3s;
+        }
+    }
+
+}
+
+.modal {
+    &__title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        margin: 20px;
+    }
+
+    span {
+        text-align: justify;
+    }
+
+    &__button {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__ok {
+        background-color: greenyellow;
+        border: none;
+        border-radius: 20px;
+        width: 30%;
+        aspect-ratio: 3/1;
+        cursor: pointer;
+    }
+
+    &__close {
+        background: red;
+        border: none;
+        border-radius: 20px;
+        width: 30%;
+        aspect-ratio: 3/1;
+        cursor: pointer;
+    }
+
+    &__ok:hover {
+        background-color: rgb(31, 199, 107);
+        transition: all ease-out 0.3s;
+    }
+
+    &__close:hover {
+        background-color: rgb(150, 12, 12);
+        transition: all ease-out 0.3s;
+    }
+}
