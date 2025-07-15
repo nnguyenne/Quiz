@@ -1,4 +1,4 @@
-const API_DOMAIN = "https://quasar-complex-wind.glitch.me/";
+const API_DOMAIN = "https://quiz-0afl.onrender.com/";
 
 export const get = async(path) => {    
     const response = await fetch(API_DOMAIN + path);
