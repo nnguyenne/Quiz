@@ -40,5 +40,5 @@
 2. Chọn một chủ đề để bắt đầu làm bài
 3. Trả lời các câu hỏi trắc nghiệm (MCQ)
 4. Nhấn **"Nộp bài"** → hiển thị điểm & kết quả
-5. Lịch sử làm bài được lưu trong `sessionStorage` (theo người dùng)
+5. Lịch sử làm bài được lưu trong `JSON-SERVER` (theo người dùng)
 
