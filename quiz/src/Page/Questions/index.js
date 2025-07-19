@@ -1,5 +1,4 @@
 import { useSearchParams } from "react-router-dom";
-import GoBack from "../../components/GoBack";
 import { useEffect, useState } from "react";
 import { getQuestion } from "../../Services/Questions";
 import Swal from 'sweetalert2/dist/sweetalert2.js';
@@ -99,7 +98,7 @@ function Questions() {
                         setLoading(false);
                     }
                 } catch (err) {
-                    console.error(err);
+                    // console.error(err);
                     Swal.fire("Lỗi!", "Không thể kết nối tới server.", "error");
                     setLoading(false);
                 }
@@ -120,8 +119,6 @@ function Questions() {
 
     return (
         <>
-            <GoBack />
-
             <div className="quesion">
                 <h2 className="question__title">Danh sách câu hỏi:</h2>
                 {questions.map((item, index) => (

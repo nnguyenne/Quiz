@@ -51,7 +51,15 @@ function History() {
             <div className="history__topic">Chủ đề: {item.topicName}</div>
             <div className="history__score">Điểm: {item.score}/{item.answers.length}</div>
             <div className="history__time">Thời gian làm: {item.time}</div>
-            <Link to={`/result?id=${item.id}`} className="history__btn_xem">Xem</Link>
+            {/* <Link to={`/result?id=${item.id}`} className="history__btn_xem">Xem</Link> */}
+            <Link
+              to={`/result?id=${item.id}`}
+              state={{score: item.score }}
+              className="history__btn_xem"
+            >
+              Xem
+            </Link>
+
           </div>
         ))}
       </div>

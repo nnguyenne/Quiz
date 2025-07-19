@@ -2,8 +2,11 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { getQuestion } from "../../Services/Questions";
 import { getAnswers } from "../../Services/Answers";
+import { useLocation } from 'react-router-dom';
 
 function Result() {
+  const location = useLocation();
+  const score = location.state?.score;
   const [searchParams] = useSearchParams();
   const id = searchParams.get("id");
   const [questions, setQuestions] = useState([]);
@@ -18,7 +21,7 @@ function Result() {
 
       if (!currentAnswer) {
         alert("Không tìm thấy bài làm!\nQuay về trang lịch sử làm bài!");
-        window.location.href = "/"
+        window.location.href = "/History"
         return;
       }
 
@@ -36,6 +39,7 @@ function Result() {
 
   return (
     <>
+      <h2>Điểm: {score}</h2>
       <h2>Đáp án</h2>
       {questions.map((q, index) => {
         const userAnswer = answers.find(a => a.questionId === q.id)?.answer;
@@ -51,8 +55,8 @@ function Result() {
                       i === q.correctAnswer
                         ? "green"
                         : i === userAnswer
-                        ? "red"
-                        : "black",
+                          ? "red"
+                          : "black",
                     fontWeight: i === userAnswer || i === q.correctAnswer ? "bold" : "normal"
                   }}
                 >
