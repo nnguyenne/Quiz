@@ -1,1 +1,8 @@
-{}
+{
+  "short_name": "QuizApp",
+  "name": "Quiz Application",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}

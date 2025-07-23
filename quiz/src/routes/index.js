@@ -8,6 +8,7 @@ import Questions from '../Page/Questions';
 import Topics from '../Page/Topics';
 import History from '../Page/History';
 import Result from '../Page/Result';
+import Profile from '../Page/Profile';
 export const routes = [
     {
         path: "/",
@@ -43,6 +44,10 @@ export const routes = [
                     {
                         path: "Result",
                         element: <Result />
+                    },
+                    {
+                        path: "Profile",
+                        element: <Profile />
                     },
                 ]
             },

@@ -3,12 +3,14 @@ import "./LayoutDefault.scss"
 import { editUser, getUser } from "../../Services/UserServiecs";
 import logo from '../../assets/images/logo.jpg';
 import { useState } from "react";
+import { FaUserCircle } from "react-icons/fa";
 
 function LayoutDefault() {
   const token = sessionStorage.getItem("token");
   const isLogin = !!token;
   const navigate = useNavigate();
   const [showMenu, setShowMenu] = useState(false);
+  const [showMenuUser, setShowMenuUser] = useState(false);
 
   const navLinkActive = (e) => {
     // console.log(e);
@@ -33,7 +35,7 @@ function LayoutDefault() {
 
   return (
     <>
-      <div className="layoutdefault">
+      <div className="layoutdefault" onClick={() => { setShowMenu(false); setShowMenuUser(false) }}>
         <header className="layoutdefault__header">
           <div className="layoutdefault__header__logo">
             <Link to="/">
@@ -42,7 +44,7 @@ function LayoutDefault() {
           </div>
 
 
-          <div className="layoutdefault__header__toggle" onClick={() => setShowMenu(!showMenu)}>
+          <div className="layoutdefault__header__toggle" onClick={(e) => { e.stopPropagation(); setShowMenu(!showMenu) }}>
             ☰
           </div>
 
@@ -51,7 +53,7 @@ function LayoutDefault() {
               <NavLink to="/" className={navLinkActive}>Home</NavLink>
             </li>
             <li>
-              <NavLink to="/Topics" className={navLinkActive}>Topics</NavLink>
+              <NavLink to="/Topics" className={navLinkActive}>Topic</NavLink>
             </li>
             <li>
               <NavLink to="/History" className={navLinkActive}>History</NavLink>
@@ -59,9 +61,17 @@ function LayoutDefault() {
           </ul>
           <div className="layoutdefault__header__right">
             {isLogin ? (
-              <>
-                <button className="layoutdefault__header__right--logout" onClick={handleLogout}>Đăng xuất</button>
-              </>
+              <div className="layoutdefault__header__user">
+                <div className="layoutdefault__header__user-icon" onClick={(e) => { e.stopPropagation(); setShowMenuUser(!showMenuUser) }}>
+                  <FaUserCircle size={24} />
+                </div>
+                {showMenuUser && (
+                  <ul className="layoutdefault__header__user-dropdown">
+                    <li onClick={() => navigate("/profile")}>Trang cá nhân</li>
+                    <li onClick={handleLogout}>Đăng xuất</li>
+                  </ul>
+                )}
+              </div>
             ) : (
               <>
                 <div className="layoutdefault__header__right--item">

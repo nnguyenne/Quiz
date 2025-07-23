@@ -7,7 +7,7 @@ import { getTopic } from "../../Services/Topics";
 
 function History() {
 
-  const [userAnswers, setUserAnswers] = useState([]);
+  const [userAnswers, setUserAnswers] = useState(null);
 
   useEffect(() => {
     const fetchApi = async () => {
@@ -42,29 +42,58 @@ function History() {
   }, []);
 
 
+  // return (
+  //   <>
+  //     <h2>Lịch sử làm bài</h2>
+  //     <div className="history">
+  //       {userAnswers?.map(item => (
+  //         <div className="history__item" key={item.id}>
+  //           <div className="history__topic">Chủ đề: {item.topicName}</div>
+  //           <div className="history__score">Điểm: {item.score}/{item.answers.length}</div>
+  //           <div className="history__time">Thời gian làm: {item.time}</div>
+  //           {/* <Link to={`/result?id=${item.id}`} className="history__btn_xem">Xem</Link> */}
+  //           <Link
+  //             to={`/result?id=${item.id}`}
+  //             state={{score: item.score }}
+  //             className="history__btn_xem"
+  //           >
+  //             Xem
+  //           </Link>
+
+  //         </div>
+  //       ))}
+  //     </div>
+  //   </>
+  // )
+
   return (
     <>
       <h2>Lịch sử làm bài</h2>
       <div className="history">
-        {userAnswers.map(item => (
-          <div className="history__item" key={item.id}>
-            <div className="history__topic">Chủ đề: {item.topicName}</div>
-            <div className="history__score">Điểm: {item.score}/{item.answers.length}</div>
-            <div className="history__time">Thời gian làm: {item.time}</div>
-            {/* <Link to={`/result?id=${item.id}`} className="history__btn_xem">Xem</Link> */}
-            <Link
-              to={`/result?id=${item.id}`}
-              state={{score: item.score }}
-              className="history__btn_xem"
-            >
-              Xem
-            </Link>
-
-          </div>
-        ))}
+        {userAnswers === null ? (
+          <p>Đang tải dữ liệu...</p>
+        ) : userAnswers.length === 0 ? (
+          <p>Bạn chưa làm bài nào.</p>
+        ) : (
+          userAnswers.map(item => (
+            <div className="history__item" key={item.id}>
+              <div className="history__topic">Chủ đề: {item.topicName}</div>
+              <div className="history__score">Điểm: {item.score}/{item.answers.length}</div>
+              <div className="history__time">Thời gian làm: {item.time}</div>
+              <Link
+                to={`/result?id=${item.id}`}
+                state={{ score: item.score }}
+                className="history__btn_xem"
+              >
+                Xem
+              </Link>
+            </div>
+          ))
+        )}
       </div>
     </>
-  )
+  );
+
 }
 
 export default History;

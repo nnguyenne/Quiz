@@ -4,6 +4,7 @@ import "./home.scss"
 import bgHome from '../../assets/images/bg_home1.png';
 
 function Home() {
+    const token = sessionStorage.getItem("token");
     return (
         <>
             <div className="home">
@@ -19,7 +20,8 @@ function Home() {
 
             <h2>Một vài chủ đề</h2>
             <ListTopic />
-            <History />
+            {token && <History />}
+
         </>
     )
 }

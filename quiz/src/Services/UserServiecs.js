@@ -1,8 +1,6 @@
 import { del, get, patch, post } from "../utils/request";
 
 export const getUser = async () => {
-    // const response = await fetch("http://localhost:3002/products");
-    // const result = await response.json();
     const result = await get("users");
     return result;
 }
