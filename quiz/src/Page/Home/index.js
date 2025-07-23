@@ -21,7 +21,6 @@ function Home() {
             <h2>Một vài chủ đề</h2>
             <ListTopic />
             {token && <History />}
-
         </>
     )
 }
