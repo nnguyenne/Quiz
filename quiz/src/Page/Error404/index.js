@@ -43,7 +43,7 @@ const styles = {
   },
 };
 
-// Tạo animation CSS
+// Tạo animation CSS 
 const styleSheet = document.styleSheets[0];
 styleSheet.insertRule(`
   @keyframes bounce {
